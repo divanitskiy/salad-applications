@@ -10,14 +10,8 @@ const mapStoreToProps = (store: RootStore): any => ({
   onSelectAvatar: store.profile.selectAvatar,
   onUpdateMinecraftUsername: store.profile.updateMinecraftUsername,
   onUpdateUsername: store.profile.updateUsername,
-  onResetUsernameSuccess: store.profile.resetUsernameSuccess,
-  onResetMinecraftUsernameSuccess: store.profile.resetMinecraftUsernameSuccess,
   profile: store.profile.currentProfile,
   selectedAvatar: store.profile.selectedAvatar,
-  isUserNameSubmitting: store.profile.isUserNameSubmitting,
-  isUserNameSubmitSuccess: store.profile.isUserNameSubmitSuccess,
-  isMinecraftUserNameSubmitting: store.profile.isMinecraftUserNameSubmitting,
-  isMinecraftUserNameSubmitSuccess: store.profile.isMinecraftUserNameSubmitSuccess,
 })
 
 export const AccountContainer = connect(mapStoreToProps, Account)
